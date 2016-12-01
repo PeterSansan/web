@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>js实验</title>
+
+
+</head>
+
+</head>
+<body>
+	<h2>No.1 直接写入HTML输出流</h2>
+		<script>
+			document.write("<h1>这是一个标题</h1>");
+			document.write("<p>这是一个段落。</p>");
+		</script>
+
+	<h2>No.2 对事件的反应</h2>
+	
+	<button type="button" onclick="alert('欢迎!')">点我!</button>
+	
+	<h2>No.3 改变HTML内容</h2>
+	<script>
+		function displayDate(){
+			document.getElementById("demo").innerHTML=Date();
+		}
+	</script>
+	
+	<p id="demo">这是一个段落</p>	
+	<button type="button" onclick="displayDate()">显示日期</button>
+	
+	<h2>No.4 改变HTML图像</h2>
+	<script>
+	function changeImage()
+	{
+		element=document.getElementById('myimage')
+		if (element.src.match("bulbon"))
+		{
+			element.src="../pic/pic_bulboff.gif";
+		}
+		else
+	   {
+			element.src="../pic/pic_bulbon.gif";
+	   }
+	}
+	</script>
+	<img id="myimage" onclick="changeImage()"
+	src="../pic/pic_bulboff.gif" width="100" height="180">
+	<p>点击灯泡就可以打开或关闭这盏灯</p>
+	
+	<h2>No.5 改变HTML样式</h2>
+	<p id="demo5">JavaScript 能改变 HTML 元素的样式。</p>
+	<script>
+		function myFunction5()
+		{
+			x=document.getElementById("demo5") // 找到元素
+			x.style.color="#ff0000";          // 改变样式
+		}
+	</script>
+	<button type="button" onclick="myFunction5()">点击这里</button>
+	
+	<h2>No.6 验证输入</h2>
+	<p>请输入数字。如果输入值不是数字，浏览器会弹出提示框。</p>
+	<input id="demo6" type="text">
+	<script>
+		function myFunction6()
+		{
+			var x=document.getElementById("demo6").value;
+			if(x==""||isNaN(x))
+			{
+				alert("不是数字");
+			}
+		}
+	</script>
+	<button type="button" onclick="myFunction6()">点击这里</button>
+	
+	<h2>No.7 外部js文件</h2>
+	<p id="demo7">显示时间</p>
+	<button type="button" onclick="myFunction7()">点击这里</button>
+	<p><b>注释：</b>myFunction 保存在名为 "myScript.js" 的外部文件中。</p>
+	<script src="../js/myScript.js"></script>
+	
+	<h2>浏览器控制器调试js</h2>
+	<p>浏览器中(Chrome, IE, Firefox) 使用 F12 来启用调试模式， 在调试窗口中点击 "Console" 菜单。</p>
+	<script>
+		a = 12;
+		b = 6;
+		c = a + b;
+		console.log("大家都是坏人");
+		console.log(c);
+	</script>
+</body>
+</html>

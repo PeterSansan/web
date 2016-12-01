@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>页面标题</title>
+</head>
+<body>
+	<p>
+		<a href="#C3">查看章节3</a>
+
+	</p>
+	<p>
+		<a href="http://www.runoob.com/html/html-tutorial.html">
+			<img src="../pic/cat.png" alt="Pulpit rock" width="440" height="200">
+		</a>
+	</p>创建图片链接:
+	<h2 style="background-color:red;text-align:center;">No.1</h2> <!--内嵌样式CSS-->
+	<p>我的第一个段落。</p> 
+	
+	<h2>No.2</h2>
+	<p>我的第二个段落。</p>
+	
+	<h2 id="C3">No.3</h2>
+	<p>文本域（Text Fields）</p>
+	
+	<form action="demo-form.php">
+		First name: <input type="text" name="FirstName" value="Mickey"><br>
+		Last name: <input type="text" name="LastName" value="Mouse"><br>
+		<input type="submit" value="提交">
+	</form>
+	<h2>No.4</h2>
+	<p>密码字段</p>
+	<form action="">
+		Username: <input type="text" name="user"><br>
+		Password: <input type="password" name="password">
+	</form>
+	<h2 id="C5">No.5</h2>
+	<p>单选按钮（Radio Buttons）</p>
+	<form>
+		<input type="radio" name="sex" value="male">Male<br>
+		<input type="radio" name="sex" value="female">Female
+	</form>
+	<h2>No.6</h2>
+	<p>复选框（Checkboxes）</p>
+	<form action="demo-form.php" method="get">
+		<input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+		<input type="checkbox" name="vehicle" value="Car" checked="checked"> I have a car<br>
+		<input type="submit" value="提交">
+	</form>
+	<h2>No.7</h2>
+	<p>提交按钮(Submit Button)</p>
+	<form name="input" action="html_form_action.php" method="get">
+		Username: <input type="text" name="user">
+		<input type="submit" value="Submit">
+	</form>
+	<h2>No.8</h2>
+	<p>简单的下拉列表</p>
+	<form action="">
+		<select name="cars">
+		<option value="volvo">Volvo</option>
+		<option value="saab">Saab</option>
+		<option value="fiat">Fiat</option>
+		<option value="audi">Audi</option>
+		</select>
+		</form>
+	<h2>No.9</h2>
+	<p>文本框</p>
+	<textarea rows="10" cols="30">
+我是一个文本框。
+	</textarea>
+	<h2>No.10</h2>
+	<p>发送邮件</p>
+	<h3>发送邮件到 someone@example.com:</h3>
+
+	<form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+		Name:<br>
+		<input type="text" name="name" value="your name"><br>
+		E-mail:<br>
+		<input type="text" name="mail" value="your email"><br>
+		Comment:<br>
+		<input type="text" name="comment" value="your comment" size="50"><br><br>
+		<input type="submit" value="发送">
+		<input type="reset" value="重置">
+	</form>
+		
+	<h2>No.11</h2>
+	<p>框架</p>
+	<iframe src="s0.html" width="200" height="200"></iframe>
+	<h2>No.12</h2>
+	<p>脚本：JavaScript直接在HTML输出</p>
+	<script>
+		document.write("Hello World!")
+		document.write("<p>这是一个段落。</p>");
+	</script> 
+	<h2>No.13</h2>
+	<p>第一个JavaScript</p>
+	<h1>我的第一个 JavaScript </h1>
+
+	<p id="demo">JavaScript 可以触发事件，就像按钮点击。</p>
+
+	<script>
+		function myFunction()
+		{
+			document.getElementById("demo").innerHTML="Hello JavaScript!";
+		}
+	</script>
+
+		<button type="button" onclick="myFunction()">点我</button>
+	<h2>JavaScript处理HTML样式</h2>
+	<p id="demo1">JavaScript 能改变 HTML 元素的样式。</p>
+	<script>
+		function myFunction1()
+		{
+			x=document.getElementById("demo1") // 找到元素
+			x.style.color="#ff0000";          // 改变样式
+		}
+	</script>
+<button type="button" onclick="myFunction1()">点击这里</button
+	<h2>插件</h2>
+	<object width="40" height="50" data="../pic/cat2.jpg"></object>  <!--object元素-->
+	<object width="100%" height="500px" data="s0.html"></object>
+	<embed width="40" height="50" src="../pic/cat2.jpg">			<!--embed元素-->
+	<h2>音频</h2>
+	<audio controls>
+		<source src="../sound/ll.mp3" type="audio/mpeg">
+		<source src="../sound/ll.mp3" type="audio/ogg">
+		<embed height="50" width="100" src="../sound/ll.mp3">
+	</audio>
+	<h2>视频</h2>
+	<video width="720" height="480" controls>
+		<source src="../video/南山南.mp4" type="video/mp4">
+		<source src="../video/南山南.ogg" type="video/ogg">
+		<source src="../video/南山南.webm" type="video/webm">
+		<object data="../video/南山南.mp4" width="320" height="240">
+			<embed src="../video/南山南.swf" width="320" height="240">
+		</object> 
+	</video>
+	
+</body>
+</html>

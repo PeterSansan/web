@@ -2,9 +2,11 @@
 
 ![img](./pic/cat.png)
 
-- [No1.佐助超链接](./second.html)
+- [No1.佐助超链接](./subweb/s0.html)
 - [No2.一篇word文档下载链接](./download/little_star.docx)
 - [No3.ftp登录下载](ftp://111.67.196.239/Web/download/little_star.docx)
 - [No4.动图1](./pic/cat2.jpg),[动图2](./pic/rabbit.gif)
 - [No5.PDF文件查看](./download/唐诗三百首.pdf)
+- [No6.一个入门的html](./subweb/s1.htm)
+- [No7.重点是js](./subweb/s2.htm)
 
