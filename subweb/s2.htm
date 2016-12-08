@@ -88,53 +88,6 @@
 		c = a + b;
 		console.log("大家都是坏人");
 		console.log(c);
-	
-	</script>
-	
-	
-	<p>点击下面的按钮，循环遍历对象 "person" 的属性。</p>
-	
-	<button onclick="myFunction2()">点击这里</button>
-	<p id="demo1"></p>
-	
-	<script>
-		
-		//js对象、方法
-		var person = {
-			firstName: "John",
-			lastName : "Doe",
-			id : 5566,
-			fullName : function() 
-			{
-				return this.firstName + " " + this.lastName;
-			}
-		};
-		document.getElementById("demo").innerHTML = person.fullName();
-		
-		//js函数
-		function myFunction1(name,job){
-		alert("Welcome " + name + ", the " + job);}
-		
-		//js字符串属性与方法
-		var x="John is a poor.";
-		console.log("字符的长度是："+x.length);
-		
-		//js循环for
-		cars=["BMW","Volvo","Saab","Ford"];
-		for (var i=0;i<cars.length;i++){
-			document.write(cars[i] + "<br>");
-			}
-		
-		//js循环for /in
-		function myFunction2(){
-			var x;
-			var txt="";
-			var person={fname:"Bill",lname:"Gates",age:56}; 
-			for (x in person){
-				txt=txt + person[x];
-			}
-			document.getElementById("demo1").innerHTML=txt;
-		}
 	</script>
 </body>
 </html>
