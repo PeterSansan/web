@@ -2,72 +2,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>js实验</title>
+<title>php实验</title>
 
 
 </head>
 
 </head>
 <body>
-	<p>浏览器中(Chrome, IE, Firefox) 使用 F12 来启用调试模式， 在调试窗口中点击 "Console" 菜单。</p>
-
-	<p id="demo"></p>
-	<p>点击这个按钮，来调用带参数的函数。</p>
-	<button onclick="myFunction('Harry Potter','Wizard')">点击这里</button>
-	<br>
 	
-	<p>点击下面的按钮，循环遍历对象 "person" 的属性。</p>
-	
-	<button onclick="myFunction1()">点击这里</button>
-	<p id="demo1"></p>
-	<script>
-		var v1=3;
-		var v2='liu';
-		var v3=v1+v2;
-		a = 12;
-		b = 6;
-		c = a + b;
-		console.log("大家都是坏人");
-		console.log(c);
-		console.log(v3);
-		
-		//js对象、方法
-		var person = {
-			firstName: "John",
-			lastName : "Doe",
-			id : 5566,
-			fullName : function() 
-			{
-				return this.firstName + " " + this.lastName;
-			}
-		};
-		document.getElementById("demo").innerHTML = person.fullName();
-		
-		//js函数
-		function myFunction(name,job){
-		alert("Welcome " + name + ", the " + job);}
-		
-		//js字符串属性与方法
-		var x="John is a poor.";
-		console.log("字符的长度是："+x.length);
-		
-		//js循环for
-		cars=["BMW","Volvo","Saab","Ford"];
-		for (var i=0;i<cars.length;i++){
-			document.write(cars[i] + "<br>");
-			}
-		
-		//js循环for /in
-		function myFunction1(){
-			var x;
-			var txt="";
-			var person={fname:"Bill",lname:"Gates",age:56}; 
-			for (x in person){
-				txt=txt + person[x];
-			}
-			document.getElementById("demo1").innerHTML=txt;
-		}
+	<script>	
 	</script>
 
+
+
+	
 </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>php表单实验</title>
+
+
+</head>
+
+</head>
+<body>
+	<h1>PHP表单实验！</h1>
+	
+	<h3>
+	<form action="./../php/upload_file.php" method="post" enctype="multipart/form-data">
+		<label for="file">文件名：</label>
+		<input type="file" name="file" id="file"><br>
+		<input type="submit" name="submit" value="提交">
+	</form>
+	
+	<h3>演示一般表单提交</h3>;
+	<form action="welcome.php" method="post">
+		名字: <input type="text" name="fname">
+		年龄: <input type="text" name="age">
+		<input type="submit" value="提交">
+	</form>
+	
+	<h3>演示单一过滤输入</h3>
+	<form action="welcome.php" method="get">
+		邮箱: <input type="text" name="email">
+		<input type="submit" value="提交">
+	</form>
+	
+	<h3>演示单一净化输入</h3>
+	<form action="welcome.php" method="post">
+		url:<input type="text" name="url">
+		<input type="submit" value="提交">
+	</form>
+	
+	<h3>演示多个输入</h3>
+	<form action="welcome.php" method="get">
+		名字:<input type="text" name="name">
+		年龄:<input type="text" name="age">
+		邮箱:<input type="text" name="email">
+		<input type="submit" value="提交">
+	</form>	
+	
+
+</body>
+</html>
